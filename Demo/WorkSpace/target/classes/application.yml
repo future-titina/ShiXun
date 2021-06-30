@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    name: abc  #���ݿ���
+    url: jdbc:mysql://localhost:3306/abc?characterEncoding=UTF-8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8 #url
+    username: root  #�û���
+    password: 1234  #����
+    driver-class-name: com.mysql.cj.jdbc.Driver  #���ݿ���������
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #����ӳ���ļ�
+  type-aliases-package: com.example.test.bean #����ʵ����
